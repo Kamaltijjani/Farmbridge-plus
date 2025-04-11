@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarmBridge+ | Farmers & Buyers Marketplace</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>FarmBridge+</h1>
+      <p class="tagline">Connecting farmers directly to buyers — no middlemen, fair prices!</p>
+      <a href="#listings" class="cta-button">Explore Listings</a>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature-card">
+      <h3>🌱 For Farmers</h3>
+      <p>List your crops, poultry, or fish. Get paid directly!</p>
+    </div>
+    <div class="feature-card">
+      <h3>🛒 For Buyers</h3>
+      <p>Buy fresh, local produce at fair prices.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🚚 Fast Delivery</h3>
+      <p>Secure logistics for perishable goods.</p>
+    </div>
+  </section>
+
+  <!-- Product Listing Form -->
+  <section class="listing-form" id="listings">
+    <h2>List Your Product</h2>
+    <div class="form-container">
+      <input type="text" placeholder="Product (e.g., Organic Eggs)" id="product">
+      <input type="number" placeholder="Price ($)" id="price">
+      <select id="category">
+        <option value="crops">Crops</option>
+        <option value="poultry">Poultry</option>
+        <option value="fish">Fish</option>
+      </select>
+      <button onclick="addListing()">List Now</button>
+    </div>
+  </section>
+
+  <!-- Display Listings -->
+  <section class="listings" id="listings-display">
+    <h2>Fresh Produce Near You</h2>
+    <div id="listings"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 FarmBridge+ | Empowering Farmers & Buyers</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
