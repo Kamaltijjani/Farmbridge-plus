@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FarmBridge+ | Farmer-to-Buyer Marketplace</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="description" content="FarmBridge+ — connecting farmers and buyers with a modern marketplace." />
+  <style>
+    :root{
+      --primary:#2E8B57; --primary-dark:#228B22; --secondary:#FFA500; --dark:#2F4F4F; --light:#F5FFFA; --white:#fff; --gray:#D3D3D3;
+      --shadow:0 6px 20px rgba(0,0,0,0.08); --transition:all 0.25s ease;
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Poppins',sans-serif;margin:0;color:var(--dark);background:var(--light);}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+
+    header{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(6px);box-shadow:0 2px 8px rgba(0,0,0,0.05);z-index:50}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo .brand{font-weight:700;color:var(--primary);font-size:1.25rem}
+    nav a{margin-left:18px;color:var(--dark);font-weight:500}
+
+    .hero{display:flex;align-items:center;gap:40px;padding:60px 0}
+    .hero-left{flex:1}
+    .h1{font-size:2.4rem;margin:0 0 10px}
+    .lead{color:#556;border-radius:6px;margin-bottom:20px;color:#556}
+    .cta-row{display:flex;gap:12px}
+    .btn{padding:12px 18px;border-radius:999px;border:none;cursor:pointer;font-weight:600}
+    .btn-primary{background:linear-gradient(90deg,var(--primary),var(--primary-dark));color:var(--white)}
+    .btn-outline{background:transparent;border:2px solid var(--primary);color:var(--primary)}
+    .hero-right{flex:1}
+    .mockup{background:var(--white);height:320px;border-radius:20px;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;color:#888}
+
+    section{padding:48px 0}
+    .grid{display:grid;gap:20px}
+    .features-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card{background:var(--white);padding:20px;border-radius:12px;box-shadow:var(--shadow)}
+    .feature-title{font-weight:600;margin-bottom:8px}
+
+    .market-header{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .products-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .product-img{height:170px;object-fit:cover;width:100%;border-radius:8px}
+
+    footer{background:var(--dark);color:var(--white);padding:36px 0}
+    .small{font-size:0.9rem;color:#ddd}
+
+    /* responsive */
+    @media (max-width:900px){.hero{flex-direction:column}.hero-right{order:-1}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="" alt="logo" style="height:40px;border-radius:6px;object-fit:cover;display:none">
+        <div class="brand">FarmBridge+</div>
+      </div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#marketplace">Marketplace</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="home">
+      <div class="hero-left">
+        <h1 class="h1">FarmBridge+ — Farmer-to-Buyer Marketplace</h1>
+        <p class="lead">Connect directly with farmers and buyers in your region. List produce, discover suppliers, and manage orders with a simple, secure interface.</p>
+        <div class="cta-row">
+          <button class="btn btn-primary">Get Started</button>
+          <button class="btn btn-outline">Explore Projects</button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="mockup">App mockup / screenshots go here</div>
+      </div>
+    </section>
+
+    <section id="features">
+      <h2>Key Features</h2>
+      <div class="grid features-grid" style="margin-top:18px">
+        <div class="card">
+          <div class="feature-title">Local marketplace</div>
+          <p class="small">Search and browse listings near you with simple filters.</p>
+        </div>
+        <div class="card">
+          <div class="feature-title">Secure messaging</div>
+          <p class="small">Communicate directly with sellers and buyers—no middlemen.</p>
+        </div>
+        <div class="card">
+          <div class="feature-title">Order management</div>
+          <p class="small">Manage requests, offers and deliveries in a single place.</p>
+        </div>
+        <div class="card">
+          <div class="feature-title">Profiles & ratings</div>
+          <p class="small">Build trust with seller profiles, ratings and transaction history.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="marketplace">
+      <div class="market-header">
+        <h2>Marketplace</h2>
+        <div style="display:flex;gap:10px;align-items:center">
+          <input aria-label="Search" placeholder="Search produce, locations..." style="padding:10px 12px;border-radius:999px;border:1px solid var(--gray)">
+          <button class="btn btn-primary">Search</button>
+        </div>
+      </div>
+
+      <div class="grid products-grid" style="margin-top:18px">
+        <div class="card">
+          <img alt="Tomatoes" class="product-img" src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=800&q=60">
+          <h3 style="margin:12px 0 6px">Fresh Tomatoes</h3>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div style="font-weight:700;color:var(--primary)">₦600 / kg</div>
+            <div class="small">Seller: Local Farm</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img alt="Maize" class="product-img" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800&q=60">
+          <h3 style="margin:12px 0 6px">White Maize</h3>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div style="font-weight:700;color:var(--primary)">₦250 / kg</div>
+            <div class="small">Seller: GreenFields</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img alt="Peppers" class="product-img" src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=800&q=60">
+          <h3 style="margin:12px 0 6px">Hot Peppers</h3>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div style="font-weight:700;color:var(--primary)">₦900 / kg</div>
+            <div class="small">Seller: SpiceFarm</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:22px"><a href="#" class="btn btn-outline">View more listings</a></div>
+    </section>
+
+    <section id="about">
+      <h2>About FarmBridge+</h2>
+      <p class="small">FarmBridge+ aims to empower farmers by giving them a direct channel to buyers and marketplaces. This repository contains a static landing page and design assets. The project can be extended into a full-stack application using a backend (Node, Django, Laravel, etc.) and a database.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center">
+      <div>
+        <div style="font-weight:700;font-size:1.1rem">FarmBridge+</div>
+        <div class="small">Connecting farmers and buyers</div>
+      </div>
+      <div class="small">Open-source — contributions welcome · <a href="https://github.com/Kamaltijjani/Farmbridge-plus" style="color:inherit;text-decoration:underline">Repository</a></div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple interactions: smooth scroll for nav links
+    document.querySelectorAll('nav a').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const id=a.getAttribute('href');
+        if(id && id.startsWith('#')){document.querySelector(id).scrollIntoView({behavior:'smooth',block:'start'});}
+      })
+    })
+  </script>
+</body>
+</html>
