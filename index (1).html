@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FarmBridge+ | #1 Global Farmer-to-Buyer Marketplace</title>
+    <title>FarmBridge+ | Farmer-to-Buyer Portfolio Prototype</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
     <style>
+        /* Category controls */
+        .product-tabs {display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}
+        .tab-btn {padding:10px 18px;border:1px solid #2E8B57;border-radius:20px;background:white;color:#246d45;cursor:pointer}
+        .tab-btn.active {background:#2E8B57;color:white}
         /* ===== GLOBAL STYLES ===== */
         :root {
             --primary: #2E8B57; /* Sea Green - Represents agriculture */
@@ -1346,6 +1350,7 @@
     </style>
 </head>
 <body>
+    <p role="note" style="padding:12px;text-align:center;background:#fff3cd;color:#333">Portfolio demo: sample products, statistics, testimonials and farm locations. No live accounts or transactions.</p>
     <!-- Header -->
     <header class="header">
         <div class="container header-container">
@@ -1358,7 +1363,7 @@
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How It Works</a>
                 <a href="#marketplace">Marketplace</a>
-                <a href="#testimonials">Testimonials</a>
+                <a href="#testimonials">Use Cases</a>
                 <a href="#" class="btn btn-outline">Login</a>
                 <a href="#" class="btn btn-primary">Sign Up</a>
             </nav>
@@ -1384,7 +1389,7 @@
             <li class="mobile-menu-link"><a href="#features">Features</a></li>
             <li class="mobile-menu-link"><a href="#how-it-works">How It Works</a></li>
             <li class="mobile-menu-link"><a href="#marketplace">Marketplace</a></li>
-            <li class="mobile-menu-link"><a href="#testimonials">Testimonials</a></li>
+            <li class="mobile-menu-link"><a href="#testimonials">Use Cases</a></li>
         </ul>
         <div class="mobile-menu-cta">
             <a href="#" class="btn btn-primary">Login</a>
@@ -1397,7 +1402,7 @@
         <div class="container hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">Connecting Farmers Directly to Buyers Worldwide</h1>
-                <p class="hero-subtitle">FarmBridge+ eliminates middlemen, ensuring fair prices for farmers and fresh produce for buyers. Join the #1 global agricultural marketplace today.</p>
+                <p class="hero-subtitle">An educational marketplace concept for connecting farmers and buyers. Browse sample listings; no real transactions are processed.</p>
                 <div class="hero-cta">
                     <a href="#" class="btn btn-primary btn-large btn-icon">
                         <i class="fas fa-seedling"></i> I'm a Farmer
@@ -1408,16 +1413,16 @@
                 </div>
                 <div class="hero-stats">
                     <div class="stat-item">
-                        <span class="stat-number" data-count="12500">0</span>
-                        <span class="stat-label">Farmers</span>
+                        <span class="stat-number" data-count="0">0</span>
+                        <span class="stat-label">Live Farmers: not launched</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number" data-count="32000">0</span>
-                        <span class="stat-label">Buyers</span>
+                        <span class="stat-number" data-count="0">0</span>
+                        <span class="stat-label">Live Buyers: not launched</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number" data-count="120">0</span>
-                        <span class="stat-label">Countries</span>
+                        <span class="stat-number" data-count="0">0</span>
+                        <span class="stat-label">Live Countries: not launched</span>
                     </div>
                 </div>
             </div>
@@ -1459,49 +1464,49 @@
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">Why FarmBridge+ is Different</h2>
+            <h2 class="section-title">Planned Marketplace Features</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-money-bill-wave"></i>
                     </div>
                     <h3 class="feature-title">Fair Prices</h3>
-                    <p class="feature-description">Farmers earn 30-50% more by selling directly, while buyers save 20-30% on retail prices. No middlemen means better deals for everyone.</p>
+                    <p class="feature-description">Planned capability for a future version. Not implemented in this static portfolio demo.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-truck"></i>
                     </div>
                     <h3 class="feature-title">Fast Delivery</h3>
-                    <p class="feature-description">Our optimized logistics network ensures fresh produce reaches buyers quickly. We partner with reliable transporters worldwide.</p>
+                    <p class="feature-description">Planned capability for a future version. Not implemented in this static portfolio demo.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3 class="feature-title">Secure Payments</h3>
-                    <p class="feature-description">Escrow system protects both farmers and buyers. Funds are released only when produce is delivered and approved.</p>
+                    <h3 class="feature-title">Payment Integration (Planned)</h3>
+                    <p class="feature-description">Planned capability for a future version. Not implemented in this static portfolio demo.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-globe"></i>
                     </div>
                     <h3 class="feature-title">Global Reach</h3>
-                    <p class="feature-description">Connect with buyers and farmers from 120+ countries. Expand your market beyond local boundaries.</p>
+                    <p class="feature-description">Planned capability for a future version. Not implemented in this static portfolio demo.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
                     <h3 class="feature-title">Simple Interface</h3>
-                    <p class="feature-description">Designed for farmers with all education levels. Voice commands and image uploads make listing products easy.</p>
+                    <p class="feature-description">Planned capability for a future version. Not implemented in this static portfolio demo.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <h3 class="feature-title">Market Insights</h3>
-                    <p class="feature-description">Real-time pricing data and demand forecasts help you make informed decisions about what to grow and when to sell.</p>
+                    <p class="feature-description">Planned capability for a future version. Not implemented in this static portfolio demo.</p>
                 </div>
             </div>
         </div>
@@ -1516,17 +1521,17 @@
                     <div class="step">
                         <div class="step-number">1</div>
                         <h3 class="step-title">Create Your Profile</h3>
-                        <p class="step-description">Sign up as a farmer or buyer in just 2 minutes. No complicated forms.</p>
+                        <p class="step-description">Concept workflow only. Browse the demo products below; account and transaction services are not connected.</p>
                     </div>
                     <div class="step">
                         <div class="step-number">2</div>
                         <h3 class="step-title">List or Browse</h3>
-                        <p class="step-description">Farmers list products with photos. Buyers search using simple filters.</p>
+                        <p class="step-description">Concept workflow only. Browse the demo products below; account and transaction services are not connected.</p>
                     </div>
                     <div class="step">
                         <div class="step-number">3</div>
                         <h3 class="step-title">Connect & Transact</h3>
-                        <p class="step-description">Chat directly, negotiate terms, and complete secure transactions.</p>
+                        <p class="step-description">Concept workflow only. Browse the demo products below; account and transaction services are not connected.</p>
                     </div>
                 </div>
             </div>
@@ -1546,8 +1551,8 @@
                         </button>
                     </div>
                     <div class="filter-dropdown">
-                        <select class="filter-select">
-                            <option value="all">All Locations</option>
+                        <select class="filter-select" disabled aria-label="Location filtering is not available in this demo">
+                            <option value="all">Location filter coming soon</option>
                             <option value="10">Within 10km</option>
                             <option value="25">Within 25km</option>
                             <option value="50">Within 50km</option>
@@ -1556,11 +1561,17 @@
                     </div>
                 </div>
             </div>
-            <div class="map-container">
+            <div class="map-container" id="map-container">
                 <div class="map-placeholder">
                     <i class="fas fa-map-marked-alt fa-3x" style="margin-bottom: 15px;"></i>
                     <p>Interactive map showing nearby farms and products</p>
                 </div>
+            </div>
+            <div class="product-tabs" aria-label="Product categories">
+                <button type="button" class="tab-btn active" data-category="all">All products</button>
+                <button type="button" class="tab-btn" data-category="crops">Crops</button>
+                <button type="button" class="tab-btn" data-category="poultry">Poultry</button>
+                <button type="button" class="tab-btn" data-category="fish">Fish</button>
             </div>
             <div class="products-grid" id="products-grid">
                 <!-- Products will be loaded dynamically -->
@@ -1574,52 +1585,34 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
         <div class="container testimonials-container">
-            <h2 class="section-title">What Our Users Say</h2>
+            <h2 class="section-title">Illustrative Use Cases</h2>
             <div class="testimonial-slider">
                 <div class="testimonial-slides">
                     <div class="testimonial active">
-                        <p class="testimonial-quote">"Before FarmBridge+, I struggled to get fair prices for my crops. Now I sell directly to restaurants in the city and earn 40% more. This platform has changed my life!"</p>
+                        <p class="testimonial-quote">Illustrative scenario: a buyer browses sample produce and compares categories. This is not a customer testimonial.</p>
                         <div class="testimonial-author">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Grace O." class="author-avatar">
-                            <h4 class="author-name">Grace O.</h4>
-                            <p class="author-title">Vegetable Farmer, Nigeria</p>
-                            <div class="author-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                            
+                            <h4 class="author-name">Fictional demo persona</h4>
+                            <p class="author-title">Design example only</p>
+                            
                         </div>
                     </div>
                     <div class="testimonial">
-                        <p class="testimonial-quote">"As a small bakery owner, FarmBridge+ has transformed how I source ingredients. I get fresher eggs and flour at better prices, and I love supporting local farmers."</p>
+                        <p class="testimonial-quote">Illustrative scenario: a buyer browses sample produce and compares categories. This is not a customer testimonial.</p>
                         <div class="testimonial-author">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T." class="author-avatar">
-                            <h4 class="author-name">Michael T.</h4>
-                            <p class="author-title">Bakery Owner, Kenya</p>
-                            <div class="author-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
+                            
+                            <h4 class="author-name">Fictional demo persona</h4>
+                            <p class="author-title">Design example only</p>
+                            
                         </div>
                     </div>
                     <div class="testimonial">
-                        <p class="testimonial-quote">"The live video inspection feature gives me confidence when buying fish. I can see the quality before purchasing, which has reduced waste in my seafood restaurant."</p>
+                        <p class="testimonial-quote">Illustrative scenario: a buyer browses sample produce and compares categories. This is not a customer testimonial.</p>
                         <div class="testimonial-author">
-                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Lisa K." class="author-avatar">
-                            <h4 class="author-name">Lisa K.</h4>
-                            <p class="author-title">Restaurant Owner, Ghana</p>
-                            <div class="author-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                            
+                            <h4 class="author-name">Fictional demo persona</h4>
+                            <p class="author-title">Design example only</p>
+                            
                         </div>
                     </div>
                 </div>
@@ -1644,7 +1637,7 @@
     <section class="cta">
         <div class="container cta-container">
             <h2 class="cta-title">Ready to Join the Agricultural Revolution?</h2>
-            <p class="cta-subtitle">Whether you're a farmer looking for better prices or a buyer seeking fresher produce, FarmBridge+ is the platform for you. Sign up today and experience the future of agricultural trade.</p>
+            <p class="cta-subtitle">Explore the concept. Registration and marketplace transactions are not available in this demo.</p>
             <div class="cta-buttons">
                 <a href="#" class="btn btn-primary btn-large">Join as Farmer</a>
                 <a href="#" class="btn btn-secondary btn-large">Join as Buyer</a>
@@ -1661,7 +1654,7 @@
                         <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMjAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yMCAxMEMyMCA0LjQ3NzE1IDI0LjQ3NzIgMCAzMCAwSDE3MEwxODAgMTBWNTBDMTgwIDU1LjUyMjggMTc1LjUyMyA2MCAxNzAgNjBIMzBDMjQuNDc3MiA2MCAyMCA1NS41MjI4IDIwIDUwVjEwWiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNNTAgMjBMNjAgNDBMNzAgMjBMODAgNDBMOTAgMjAiIHN0cm9rZT0iIzJFOEI1NyIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48Y2lyY2xlIGN4PSIxMjAiIGN5PSIzMCIgcj0iMTAiIGZpbGw9IiMyRThCNTciLz48cGF0aCBkPSJNMTQwIDIwTDE2MCAyME0xNDAgMzBMMTYwIDMwTTE0MCA0MEwxNjAgNDAiIHN0cm9rZT0iIzJFOEI1NyIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4=" alt="FarmBridge+ Logo" class="footer-logo-img">
                         <span class="footer-logo-text">FarmBridge+</span>
                     </div>
-                    <p class="footer-about">FarmBridge+ is the world's leading direct farmer-to-buyer marketplace, connecting agricultural producers with buyers globally for fairer trade.</p>
+                    <p class="footer-about">A student portfolio prototype exploring farmer-to-buyer marketplace design.</p>
                     <div class="footer-social">
                         <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
@@ -1962,34 +1955,40 @@
         // Initial render
         renderProducts(products);
 
-        // Filter products by category
+        // Apply category and text search together, including an explicit empty state.
+        let selectedCategory = 'all';
+        const searchInput = document.querySelector('.search-input');
+        function applyFilters() {
+            const term = searchInput.value.trim().toLowerCase();
+            const matches = products.filter(p =>
+                (selectedCategory === 'all' || p.category === selectedCategory) &&
+                `${p.title} ${p.seller.name} ${p.seller.location}`.toLowerCase().includes(term));
+            renderProducts(matches);
+            if (!matches.length) productsGrid.textContent = 'No demo products match these filters.';
+        }
         document.querySelectorAll('.tab-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-                
-                const category = btn.getAttribute('data-category');
-                if (category === 'all') {
-                    renderProducts(products);
-                } else {
-                    const filteredProducts = products.filter(p => p.category === category);
-                    renderProducts(filteredProducts);
-                }
+                selectedCategory = btn.getAttribute('data-category');
+                applyFilters();
             });
         });
-
-        // Search functionality
-        document.querySelector('.search-input').addEventListener('input', (e) => {
-            const searchTerm = e.target.value.toLowerCase();
-            const filteredProducts = products.filter(p => 
-                p.title.toLowerCase().includes(searchTerm) || 
-                p.seller.name.toLowerCase().includes(searchTerm)
-            );
-            renderProducts(filteredProducts);
+        searchInput.addEventListener('input', applyFilters);
+        document.querySelector('.search-btn').addEventListener('click', applyFilters);
+        document.querySelector('.view-more button').addEventListener('click', () => alert('All six demo products are already available. Clear filters to see them.'));
+        document.querySelector('.newsletter-form').addEventListener('submit', event => {
+            event.preventDefault();
+            alert('Demo only: no subscription was created and no email was sent.');
         });
 
         // Initialize map (Leaflet)
         function initMap() {
+            if (!window.L) {
+                document.getElementById('map-container').textContent = 'Map unavailable. Connect to the internet and reload to view sample farm locations.';
+                return;
+            }
+            document.getElementById('map-container').replaceChildren();
             const map = L.map('map-container').setView([1.2921, 36.8219], 6); // Centered on Kenya
             
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -2025,13 +2024,17 @@
 
         mapObserver.observe(document.querySelector('.map-container'));
 
+        // Explain unfinished demo actions instead of silently jumping to the page top.
+        document.querySelectorAll('a[href="#"]').forEach(link => {
+            link.addEventListener('click', () => alert('This feature is not connected in this portfolio demo.'));
+        });
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 
                 const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
+                const targetElement = targetId.length > 1 ? document.getElementById(targetId.slice(1)) : null;
                 
                 if (targetElement) {
                     window.scrollTo({
