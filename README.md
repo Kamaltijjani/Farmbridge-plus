@@ -2,6 +2,8 @@
 
 A static farmer-to-buyer marketplace prototype built with HTML, CSS and JavaScript.
 
+[Open the published demo](https://kamaltijjani.github.io/Farmbridge-plus/)
+
 ## Run
 
 From this folder, run `python -m http.server 8000`, then open `http://localhost:8000`.
